@@ -30,4 +30,14 @@ export class DashboardComponent implements OnInit {
   initRoom() {
     this.roomService.get().subscribe((rooms) => (this.rooms = rooms));
   }
+
+  deleteColoc(coloc: Coloc) {
+    this.colocs = this.colocs.filter((h) => h !== coloc);
+    this.colocService.delete(coloc.id).subscribe();
+  }
+
+  deleteRoom(room: Room) {
+    this.rooms = this.rooms.filter((h) => h !== room);
+    this.roomService.delete(room.id).subscribe();
+  }
 }

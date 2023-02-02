@@ -2,14 +2,34 @@
 
 <div>
   <h2>Colocs</h2>
-  <div *ngFor="let coloc of colocs">
-    {{ coloc.name }}
-  </div>
+  <ul>
+    <li *ngFor="let coloc of colocs">
+      {{ coloc.id }} - {{ coloc.name }}
+      <button
+        type="button"
+        class="delete"
+        title="delete coloc"
+        (click)="deleteColoc(coloc)"
+      >
+        x
+      </button>
+    </li>
+  </ul>
 </div>
 
 <div>
   <h2>Pieces</h2>
-  <div *ngFor="let room of rooms">
-    {{ room.name }}
-  </div>
+  <ul>
+    <li *ngFor="let room of rooms">
+      {{ room.id }} - {{ room.name }}
+      <button
+        type="button"
+        class="delete"
+        title="delete room"
+        (click)="deleteRoom(room)"
+      >
+        x
+      </button>
+    </li>
+  </ul>
 </div>
