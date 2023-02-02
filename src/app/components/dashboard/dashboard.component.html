@@ -1,1 +1,15 @@
 <h1>DASHBOARD</h1>
+
+<div>
+  <h2>Colocs</h2>
+  <div *ngFor="let coloc of colocs">
+    {{ coloc.name }}
+  </div>
+</div>
+
+<div>
+  <h2>Pieces</h2>
+  <div *ngFor="let room of rooms">
+    {{ room.name }}
+  </div>
+</div>
