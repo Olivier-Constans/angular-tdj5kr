@@ -24,7 +24,7 @@ export class DashboardComponent implements OnInit {
   }
 
   initColoc() {
-    this.colocService.getColocs().subscribe((colocs) => (this.colocs = colocs));
+    this.colocService.get().subscribe((colocs) => (this.colocs = colocs));
   }
 
   initRoom() {

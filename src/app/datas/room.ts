@@ -1,5 +1,6 @@
-export interface Room {
+import { NumberId } from './numberId';
+
+export interface Room extends NumberId {
   name: string;
-  id: number;
   size: number;
 }
