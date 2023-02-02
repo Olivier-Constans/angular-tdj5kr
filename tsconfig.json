@@ -3,12 +3,6 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
-    "paths": {
-      "components/*": ["src/app/components/*"],
-      "services/*": ["src/app/services/*"],
-      "datas/*": ["src/app/datas/*"],
-      "mocks/*": ["src/app/mocks/*"]
-    },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
