@@ -1,0 +1,16 @@
+<div>
+  <h2>Datas</h2>
+  <ul>
+    <li *ngFor="let data of datas">
+      {{ data.id }}
+      <button
+        type="button"
+        class="delete"
+        title="delete data"
+        (click)="delete(data)"
+      >
+        x
+      </button>
+    </li>
+  </ul>
+</div>

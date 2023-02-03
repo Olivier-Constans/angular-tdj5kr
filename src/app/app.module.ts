@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { ItemsManagerComponent } from './components/items-manager/items-manager.component';
 @NgModule({
   imports: [
     BrowserModule,
@@ -24,7 +25,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
       dataEncapsulation: false,
     }),
   ],
-  declarations: [AppComponent, DashboardComponent],
+  declarations: [AppComponent, DashboardComponent, ItemsManagerComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

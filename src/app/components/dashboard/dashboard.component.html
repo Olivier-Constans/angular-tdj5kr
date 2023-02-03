@@ -1,35 +1,4 @@
 <h1>DASHBOARD</h1>
+<app-items-manager [datas]="colocs" [crudService]="colocService" />
 
-<div>
-  <h2>Colocs</h2>
-  <ul>
-    <li *ngFor="let coloc of colocs">
-      {{ coloc.id }} - {{ coloc.name }}
-      <button
-        type="button"
-        class="delete"
-        title="delete coloc"
-        (click)="deleteColoc(coloc)"
-      >
-        x
-      </button>
-    </li>
-  </ul>
-</div>
-
-<div>
-  <h2>Pieces</h2>
-  <ul>
-    <li *ngFor="let room of rooms">
-      {{ room.id }} - {{ room.name }}
-      <button
-        type="button"
-        class="delete"
-        title="delete room"
-        (click)="deleteRoom(room)"
-      >
-        x
-      </button>
-    </li>
-  </ul>
-</div>
+<app-items-manager [datas]="rooms" [crudService]="roomService" />
